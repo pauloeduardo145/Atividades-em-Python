@@ -1,0 +1,28 @@
+#Numeros pedidos
+numeros = []
+
+#pedir os numeros
+for i in range(6):
+    numeros.append(int(input(f'{i}ª numero ')))
+    
+
+#media dos numeros
+media = sum(numeros) / len(numeros)
+print('A soma da media dos numeros é ',media)
+
+#maior e menor numeros digitados
+menor = min(numeros)
+maior = max(numeros)
+print('O menor numero digitado é ',menor, 'e o maior numero digitado é ',maior)
+
+#final do codigo
+print(numeros)
+
+def mediade20():
+    if media == 20:
+        print("Comunicação restaurada.")
+    else:
+        print("Sinal instável. Tente novamente.")
+
+#chamar funcões
+mediade20()
